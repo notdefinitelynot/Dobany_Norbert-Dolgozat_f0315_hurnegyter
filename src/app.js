@@ -24,18 +24,18 @@ function startCalc()
     let sideC = Number(sideCInput.value)
     let sideD = Number(sideDInput.value)
 
-    let halfArea = Number(calcHalfArea(sideA,sideB,sideC,sideD)).toFixed(3)
+    let halfPerimeter = Number(calcHalfPerimeter(sideA,sideB,sideC,sideD)).toFixed(3)
 
-    let area = Number(calcArea(halfArea,sideA,sideB,sideC,sideD))
+    let area = Number(calcArea(halfPerimeter,sideA,sideB,sideC,sideD))
     areaInput.value = area.toFixed(3)
 }
 
-function calcHalfArea(sideA,sideB,sideC,sideD)
+function calcHalfPerimeter(sideA,sideB,sideC,sideD)
 {
     return (sideA+sideB+sideC+sideD)/2
 }
 
-function calcArea(halfArea,sideA,sideB,sideC,sideD)
+function calcArea(halfPerimeter,sideA,sideB,sideC,sideD)
 {
-    return Math.sqrt((halfArea-sideA)*(halfArea-sideB)*(halfArea-sideC)*(halfArea-sideD))
+    return Math.sqrt((halfPerimeter-sideA)*(halfPerimeter-sideB)*(halfPerimeter-sideC)*(halfPerimeter-sideD))
 }
