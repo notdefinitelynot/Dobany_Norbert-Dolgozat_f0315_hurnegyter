@@ -1,0 +1,20 @@
+{
+  "name": "f0315",
+  "version": "1.0.0",
+  "description": "Hurnegyszog terulet felkerulet szamitasa ",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --config bs-config.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hurnegyszog",
+    "terulet",
+    "felkerulet"
+  ],
+  "author": "Dobány Norbert Andor",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^3.0.2"
+  }
+}
