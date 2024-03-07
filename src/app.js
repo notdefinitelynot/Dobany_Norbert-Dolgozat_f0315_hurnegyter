@@ -2,7 +2,7 @@
 File: app.js
 Author: Dobány Norbert
 Copyright: 2024, Dobány Norbert
-Group: Szoft I / 1 /N
+Group: Szoft I / 1 / N
 Date: 2024-03-07
 Github: https://github.com/notdefinitelynot/
 Licenc: GNU GPL
@@ -19,14 +19,14 @@ calcButton.addEventListener('click', () => {startCalc()})
 
 function startCalc()
 {
-    const sideA = Number(sideAInput.value)
-    const sideB = Number(sideBInput.value)
-    const sideC = Number(sideCInput.value)
-    const sideD = Number(sideDInput.value)
+    let sideA = Number(sideAInput.value)
+    let sideB = Number(sideBInput.value)
+    let sideC = Number(sideCInput.value)
+    let sideD = Number(sideDInput.value)
 
-    const halfArea = Number(calcHalfArea(sideA,sideB,sideC,sideD)).toFixed(3)
+    let halfArea = Number(calcHalfArea(sideA,sideB,sideC,sideD)).toFixed(3)
 
-    const area = Number(calcArea(halfArea,sideA,sideB,sideC,sideD))
+    let area = Number(calcArea(halfArea,sideA,sideB,sideC,sideD))
     areaInput.value = area.toFixed(3)
 }
 
