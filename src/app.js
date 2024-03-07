@@ -1,3 +1,13 @@
+/*
+File: app.js
+Author: Dobány Norbert
+Copyright: 2024, Dobány Norbert
+Group: Szoft I / 1 /N
+Date: 2024-03-07
+Github: https://github.com/notdefinitelynot/
+Licenc: GNU GPL
+*/
+
 const sideAInput = document.querySelector("#sideA");
 const sideBInput = document.querySelector("#sideB");
 const sideCInput = document.querySelector("#sideC");
