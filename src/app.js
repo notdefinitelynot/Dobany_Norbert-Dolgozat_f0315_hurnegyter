@@ -24,7 +24,7 @@ function startCalc()
     let sideC = Number(sideCInput.value)
     let sideD = Number(sideDInput.value)
 
-    let halfPerimeter = Number(calcHalfPerimeter(sideA,sideB,sideC,sideD)).toFixed(3)
+    let halfPerimeter = Number(calcHalfPerimeter(sideA,sideB,sideC,sideD))
 
     let area = Number(calcArea(halfPerimeter,sideA,sideB,sideC,sideD))
     areaInput.value = area.toFixed(3)
